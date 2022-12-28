@@ -1,0 +1,9 @@
+<!--Pantalla donde se vera el resultado de las Operaciones-->
+<div class="row text-center mt-3 ">
+    <div class="col-11 mx-auto">
+        <input type="text" disabled value="{{numero}}">
+    </div>
+</div>
+<app-botones (numeroPulsado)="obtenerNumeroButton($event)" (operadorPulsado)="obtenerOperadorButton($event)" (decimalPulsado)="obtenerDecimalButton($event)"></app-botones>
+
+
